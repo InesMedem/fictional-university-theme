@@ -14,18 +14,18 @@
 
 <div class="container container--narrow page-section">
 
-<ul class="link-list min-list">
-    <?php
-    while (have_posts()) {
-        the_post(); ?>
-        <li><a href="<?php the_permalink();?>"> <?php the_title();?> </a></li>
+    <ul class="link-list min-list">
+        <?php
+        while (have_posts()) {
+            the_post(); ?>
+            <li><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a></li>
 
-    <?php }
+        <?php }
 
-    echo paginate_links();
-    ?>
+        echo paginate_links();
+        ?>
 
-</ul>
+    </ul>
 </div>
 
 <?php get_footer(); ?>
